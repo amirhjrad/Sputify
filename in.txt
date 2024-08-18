@@ -1,0 +1,79 @@
+POST signup ? username <user1> password <123> mode <user>
+POST playlist ? name <pl1>
+POST playlist ? name <pl2>
+POST logout ?
+POST signup ? username <artist2> password <123> mode <artist>
+POST music ? title <tr1> path </desktop> year <2024> album <alb1> tags <rock> duration <00:00:10>
+POST music ? title <tr2> path </desktop> year <2024> album <alb1> tags <rock> duration <00:00:10>
+POST music ? title <tr3> path </desktop> year <2024> album <alb1> tags <rock> duration <00:00:10>
+POST logout ?
+POST signup ? username <artist3> password <123> mode <artist>
+POST music ? title <tr4> path </desktop> year <2024> album <alb1> tags <rock> duration <00:00:10>
+POST logout ?
+POST login ? username <user1> password <123>
+PUT add_playlist ? name <pl2> id <4>
+PUT add_playlist ? name <pl1> id <2>
+PUT add_playlist ? name <pl2> id <1>
+PUT add_playlist ? name <pl1> id <1>
+PUT add_playlist ? name <pl1> id <3>
+GET playlist ? id <1>
+GET users ?
+GET search_music ? name <tr1> artist <artist> tag <roc>
+GET search_music ? name <tr4> artist <artist> tag <roc>
+POST logout ?
+POST login ? username <artist3> password <123>
+DELETE music ? id <4>
+POST logout ?
+POST login ? username <user1> password <123>
+GET playlist ? id <1>
+PUT add_playlist ? name <pl2> id <4>
+GET search_music ? name <tr4> artist <artist> tag <roc>
+--------------------------------------------------------
+POST signup ? username <user1> password <123> mode <user>
+POST logout ?
+POST signup ? username <user2> password <123> mode <artist>
+POST logout ?
+POST signup ? username <user3> password <123> mode <artist>
+POST logout ?
+POST signup ? username <user4> password <123> mode <user>
+POST follow ? id <1>
+POST unfollow ? id <1>
+POST login ? username <user1> password <123>
+POST like ? id <1>
+----------------------------------------------------------
+POST signup ? username <artist2> password <123> mode <artist>
+POST music ? title <tr1> path </desktop> year <2024> album <alb1> tags <rock> duration <00:00:10>
+POST music ? title <tr2> path </desktop> year <2024> album <alb1> tags <rock> duration <00:00:10>
+POST music ? title <tr3> path </desktop> year <2024> album <alb1> tags <rock> duration <00:00:10>
+POST music ? title <tr4> path </desktop> year <2024> album <alb1> tags <rock> duration <00:00:10>
+POST music ? title <tr5> path </desktop> year <2024> album <alb1> tags <rock> duration <00:00:10>
+POST music ? title <tr6> path </desktop> year <2024> album <alb1> tags <rock> duration <00:00:10>
+POST logout ?
+POST signup ? username <artist3> password <123> mode <artist>
+POST music ? title <tr7> path </desktop> year <2024> album <alb1> tags <rock> duration <00:00:10>
+POST music ? title <tr8> path </desktop> year <2024> album <alb1> tags <rock> duration <00:00:10>
+POST music ? title <tr9> path </desktop> year <2024> album <alb1> tags <rock> duration <00:00:10>
+POST logout ?
+POST signup ? username <user1> password <123> mode <user>
+POST like ? id <1>
+POST like ? id <2>
+POST like ? id <4>
+POST like ? id <7>
+POST logout ?
+POST signup ? username <user2> password <123> mode <user>
+POST like ? id <7>
+GET recommendations ?
+POST logout ?
+POST login ? username <artist3> password <123>
+DELETE music ? id <8>
+GET recommendations ?
+POST logout ?
+POST login ? username <user2> password <123>
+GET recommendations ?
+
+
+
+
+
+
+

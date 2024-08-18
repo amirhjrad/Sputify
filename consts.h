@@ -1,0 +1,77 @@
+#ifndef CONSTS_H
+#define CONSTS_H
+#include <string>
+
+const std::string EMPTY = "Empty";
+const std::string PERMISSION_DENIED = "Permission Denied";
+const std::string OK = "OK";
+const std::string BAD_REQUEST = "Bad Request";
+const std::string NOT_FOUND = "Not Found";
+const char SEPARATOR = ' ';
+const int MIN_INPUT_ARG = 3;
+const int MAX_INPUT_ARG = 15;
+const std::string PUT_INSTR = "PUT";
+const std::string POST_INSTR = "POST";
+const std::string GET_INSTR = "GET";
+const std::string DELETE_INSTR = "DELETE";
+const std::string INSTR_SIGN = "?";
+const std::string SIGNUP = "signup";
+const std::string LOGIN = "login";
+const std::string LOGOUT = "logout";
+const std::string PLAY_LIST = "playlist";
+const std::string MUSIC = "music";
+const std::string USERNAME = "username";
+const std::string PASSWORD = "password";
+const std::string MODE = "mode";
+const std::string NAME = "name";
+const std::string TITLE = "title";
+const std::string PATH = "path";
+const std::string YEAR = "year";
+const std::string TAGS = "tags";
+const std::string TAG = "tag";
+const std::string DURATION = "duration";
+const std::string ALBUM = "album";
+const int SIGNUP_SIZE = 9;
+const int LOGIN_SIZE = 7;
+const int LOGOUT_SIZE = 3;
+const int PLAYLIST_SIZE = 5;
+const int MUSIC_SIZE = 15;
+const std::string REG_MUSICS = "registered_musics";
+const std::string MUSICS = "musics";
+const std::string USERS = "users";
+const std::string SEARCH_MUSIC = "search_music";
+const std::string ID = "id";
+const std::string ARTIST = "artist";
+const std::string USER = "user";
+const int REG_MUSICS_SIZE = 3;
+const int SEARHC_MUSICS_SIZE = 9;
+const std::string ADD_PL = "add_playlist";
+const int ADD_PL_SIZE = 7;
+const std::string MUSICS_TABLE = "ID, Name, Artist";
+const std::string RECOM_MUSICS_TABLE = "ID, Name, Artist, Likes";
+const std::string MUSIC_TABLE = "ID, Name, Artist, Year, Album, Tags, Duration";
+const std::string USERS_TABLE = "ID, Mode, Username, Playlists_number/Songs_number";
+const std::string USER_TABLE = "ID, Name, Artist";
+const std::string ARTIST_INFO_SEP = ", ";
+const std::string USER_INFO_SEP = ", ";
+const std::string PL_INFO_SEP = ", ";
+const std::string ID_SIG = "ID: ";
+const std::string MODE_SIG = "Mode: ";
+const std::string USERNAME_SIG = "Username: ";
+const std::string PL_SONGS_SIG = "Playlists/Songs: ";
+const int HOUR_TO_SEC = 3600;
+const int MIN_TO_SEC = 60;
+const int TIME_THRESHOLD = 10;
+const std::string ZERO = "0";
+const std::string TIME_SEP = ":";
+const std::string PL_TABLE = "Playlist_name, Songs_number, Duration";
+const int MAX_RECOMMENDATION_TRACKS = 5;
+const std::string LIKES = "likes";
+const std::string RECOMMENDATIONS = "recommendations";
+const std::string FOLLOW = "follow";
+const std::string UNFOLLOW = "unfollow";
+const std::string LIKE = "like";
+const std::string FOLLOWINGS_SIG = "Followings: ";
+const std::string FOLLOWERS_SIG = "Followers: ";
+
+#endif

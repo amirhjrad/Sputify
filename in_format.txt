@@ -1,0 +1,21 @@
+Common:
+POST signup ? username <{username}> password <{password}> mode <mode>
+POST login ? username <{username}> password <{password}>
+POST logout ?
+GET musics ?
+GET musics ? id <{id}>
+GET users ?
+GET users ? id <{id}>
+
+User:
+POST playlist ? name <{name}>
+PUT add_playlist ? name <{name}> id <{id}>
+GET playlist ? id <{id}>
+GET search_music ? name <{name}> artist <{name}> tag <{tag}>
+
+Artist:
+POST music ? title <{title}> path <{path}> year <{year}> album <{album}> tags <{tags}> duration <{duration}>
+DELETE music ? id <{id}>
+GET registered_musics ?
+--------------------------------------------------------------------------------
+
